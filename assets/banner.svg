@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1a103c" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="retroGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+      </feMerge>
+    </filter>
+
+    <!-- Pixel Grid Pattern -->
+    <pattern id="pixelGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes floatOrb1 {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(40px, -25px) scale(1.15); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes floatOrb2 {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(-35px, 30px) scale(0.9); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes pulsePixel {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.25); }
+    }
+    @keyframes shimmerBar {
+      0% { transform: translateX(-1200px); }
+      100% { transform: translateX(1200px); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-420px); }
+      100% { transform: translateY(420px); }
+    }
+
+    .orb-1 { animation: floatOrb1 10s ease-in-out infinite; transform-origin: center; }
+    .orb-2 { animation: floatOrb2 12s ease-in-out infinite; transform-origin: center; }
+    .px-pulse-1 { animation: pulsePixel 3s ease-in-out infinite; }
+    .px-pulse-2 { animation: pulsePixel 4s ease-in-out infinite 1s; }
+    .px-pulse-3 { animation: pulsePixel 3.5s ease-in-out infinite 2s; }
+    .shimmer { animation: shimmerBar 6s linear infinite; }
+    .scanner { animation: scanline 8s linear infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Background Orbs (Non-obtrusive, depth layer) -->
+  <g filter="url(#softGlow)" opacity="0.45">
+    <circle class="orb-1" cx="220" cy="140" r="140" fill="#9333ea" />
+    <circle class="orb-2" cx="980" cy="280" r="160" fill="#06b6d4" />
+    <circle class="orb-1" cx="820" cy="100" r="110" fill="#f43f5e" />
+  </g>
+
+  <!-- Pixel Grid Overlay -->
+  <rect width="1200" height="420" rx="16" fill="url(#pixelGrid)" />
+
+  <!-- Subtle Animated Ambient Pixels (Background depth) -->
+  <g fill="#ec4899" opacity="0.6">
+    <rect class="px-pulse-1" x="80" y="70" width="14" height="14" rx="2" fill="#a855f7" />
+    <rect class="px-pulse-2" x="140" y="110" width="10" height="10" rx="2" fill="#06b6d4" />
+    <rect class="px-pulse-3" x="1050" y="90" width="16" height="16" rx="2" fill="#ec4899" />
+    <rect class="px-pulse-1" x="1110" y="150" width="12" height="12" rx="2" fill="#3b82f6" />
+    <rect class="px-pulse-2" x="90" y="320" width="16" height="16" rx="2" fill="#10b981" />
+    <rect class="px-pulse-3" x="1080" y="310" width="14" height="14" rx="2" fill="#f59e0b" />
+    <rect class="px-pulse-1" x="970" y="350" width="10" height="10" rx="2" fill="#ec4899" />
+  </g>
+
+  <!-- Decorative Pixel Art Heart & Potion (Retro elements in background corner) -->
+  <g transform="translate(1020, 45) scale(2.2)" opacity="0.35">
+    <!-- Mini Pixel Heart -->
+    <path d="M2 1h2v1h1v1h-1v1h-1v1h-1v-1h-1v-1h-1v-1h1v-1h2z" fill="#f43f5e" />
+    <path d="M5 1h2v1h1v1h-1v1h-1v1h-1v-1h-1v-1h-1v-1h1v-1h2z" fill="#f43f5e" />
+  </g>
+
+  <!-- Central Glassmorphism Backplate to ensure foreground text clarity -->
+  <rect x="70" y="45" width="1060" height="330" rx="16" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" stroke-opacity="0.6" filter="url(#glow)" />
+
+  <!-- Shimmer Accent Line -->
+  <g clip-path="url(#borderClip)">
+    <clipPath id="borderClip">
+      <rect x="70" y="45" width="1060" height="3" rx="1.5" />
+    </clipPath>
+    <rect x="70" y="45" width="1060" height="3" fill="#334155" />
+    <rect class="shimmer" x="0" y="45" width="400" height="3" fill="url(#primaryGrad)" />
+  </g>
+
+  <!-- Subtle CRT Scanline effect (ultra low opacity) -->
+  <rect class="scanner" x="70" y="45" width="1060" height="40" fill="url(#primaryGrad)" opacity="0.04" />
+
+  <!-- FOREGROUND CONTENT: Strictly foreground, highly legible, accessible fonts -->
+  <g id="foreground-content">
+    <!-- Tagline Badge -->
+    <g transform="translate(110, 80)">
+      <rect width="320" height="30" rx="15" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+      <circle cx="16" cy="15" r="5" fill="#10b981" />
+      <text x="32" y="20" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1">CURATED CREATIVE ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="110" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Press Start 2P', monospace, sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      AI PIXEL ART <tspan fill="url(#primaryGrad)">ECOSYSTEM</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="110" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#cbd5e1">
+      Top AI Pixel Art Generation &amp; Creative Tools for Indie Games &amp; Digital Artists
+    </text>
+
+    <!-- Detailed Bullet Focus -->
+    <text x="110" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" fill="#94a3b8">
+      Generative AI Models • Sprite &amp; Tilemap Editors • Grid Snapping • Palette Quantization • Upscaling
+    </text>
+
+    <!-- Interactive / Status Pills in Foreground -->
+    <g transform="translate(110, 285)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="185" height="36" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.2" />
+        <text x="15" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#93c5fd">🕹️ SaaS &amp; Studio Suites</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(200, 0)">
+        <rect width="210" height="36" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.2" />
+        <text x="15" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#d8b4fe">⚡ Generative AI Pipelines</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(425, 0)">
+        <rect width="215" height="36" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2" />
+        <text x="15" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#6ee7b7">📦 Open-Source &amp; Free Tools</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(655, 0)">
+        <rect width="195" height="36" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="1.2" />
+        <text x="15" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#f472b6">👾 Retro Game Dev Ready</text>
+      </g>
+    </g>
+  </g>
+</svg>
