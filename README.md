@@ -30,71 +30,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saashosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The dedicated pixel art creative software market is estimated at approximately **$0.5B to $0.9B**, embedded inside the broader **$2.0B+** generative AI gaming tools and **$3.8B+** retro gaming market sectors. The market is **moderately fragmented**: industry-standard standalone tooling (notably Aseprite) commands a defensible anchor among desktop game developers, while the web and mobile creative space is distributed across specialized solo-dev utilities, niche subscription platforms, and emerging generative AI sprite pipelines.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Pixilart](https://pixilart.com)**  
-
-  Cloud-based collaborative pixel art drawing platform, frame-by-frame GIF animator, and social art community featuring AI pixel-art generation and browser-native layer tools.
-
-
-
-- **[PixelMe](https://pixel-me.tokyo)**  
-
-  Web and mobile AI pixel-art converter and portrait generator transforming photographs and illustrations into stylized, palette-quantized pixel art.
-
-
-
-- **[Lospec (Pixel Editor & Palette List)](https://lospec.com)**  
-
-  Premier web hub for pixel artists offering a browser-based Lospec Pixel Editor, thousands of curated retro color palettes, and pixel-art tutorials.
-
-
-
-- **[PixelLab / Retro Diffusion Cloud](https://pixellab.ai)**  
-
-  Specialized cloud AI pixel-art studio built for game developers to generate directional character sprites, isometric tilesets, animations, and palette-locked assets.
-
-
-
-- **[Resprite](https://fengeon.com)**  
-
-  Modern cross-platform sprite editor and pixel-art studio for iPad, iPhone, and desktop featuring animation timelines, tilemap editing, and cloud project sync.
-
-
-
-- **[Pixaki](https://rizer.co)**  
-
-  Dedicated iPad pixel-art and animation studio offering Procreate-inspired touch/Apple Pencil workflows, onion skinning, and Aseprite `.ase` file compatibility.
-
-
-
-- **[Pyxel Edit](https://pyxeledit.com)**  
-
-  Specialized pixel-art and level-design editor built around linked tile instances, tileset auto-generation, and frame-by-frame sprite animation.
-
-
-
-- **[Dottable](https://dottable.app)**  
-
-  Mobile and tablet pixel-art creation studio focused on clean indexed palettes, symmetrical drawing tools, and quick sprite animation exports.
-
-
-
-- **[Aseprite (Commercial Builds & Cloud Sync)](https://aseprite.org)**  
-
-  Industry-standard animated sprite editor and pixel-art tool distributed via Steam/itch.io/Humble with official builds, Lua scripting, and source code available on GitHub.
+| Product / Company | Company Scale (Revenue / Valuation) | Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Aseprite](https://aseprite.org)** (Igara Studio S.A.) | ~$7.6M–$18M+ lifetime Steam revenue (~$5.3M+ net developer earnings; bootstrapped) | $19.99 (one-time purchase) | Free trial with unlimited time; saving and exporting files is disabled | Industry-standard animated sprite editor and pixel-art tool distributed via Steam/itch.io/Humble with official builds, Lua scripting, and source code available on GitHub. |
+| **[Pixilart](https://pixilart.com)** (Pixilart LLC) | ~$1M–$5M estimated annual revenue (bootstrapped) | $4.99/mo (Pixilart PRO) | Free forever plan; includes core drawing and animation tools, capped at 50 custom stamps and supported by ads | Cloud-based collaborative pixel art drawing platform, frame-by-frame GIF animator, and social art community featuring AI pixel-art generation and browser-native layer tools. |
+| **[Pixaki](https://rizer.co)** (Rizer Inc.) | ~$880K estimated annual revenue (independent studio) | $26.99 (one-time purchase for Pixaki 4 Pro) | Free forever tier (Pixaki Intro); capped at 160×160 px canvas size, 3 drawing layers (+1 reference), and 8 animation frames | Dedicated iPad pixel-art and animation studio offering Procreate-inspired touch/Apple Pencil workflows, onion skinning, and Aseprite `.ase` file compatibility. |
+| **[PixelLab / Retro Diffusion Cloud](https://pixellab.ai)** | Bootstrapped indie AI platform (~$100K–$300K ARR estimated; self-funded) | $12.00/mo (Pixel Apprentice tier; unlocks larger sizes & map tools) | Free plan; grants 40 fast generations on signup, thereafter 5 daily generations (stored up to max 20), capped at 200×200 px resolution | Specialized cloud AI pixel-art studio built for game developers to generate directional character sprites, isometric tilesets, animations, and palette-locked assets. |
+| **[Resprite](https://fengeon.com)** (Jiaxing Fengeon Software Co., Ltd.) | Bootstrapped indie software studio (<$250K estimated annual revenue) | $27.99 (one-time lifetime purchase on iOS/Steam) | Free forever version; full canvas access but limits the number of daily export attempts and locks advanced symmetry/color adjustment tools | Modern cross-platform sprite editor and pixel-art studio for iPad, iPhone, and desktop featuring animation timelines, tilemap editing, and cloud project sync. |
+| **[PixelMe](https://pixel-me.tokyo)** | Bootstrapped solo-developer project (<$100K estimated annual revenue) | $4.99/week or $29.99/year (Pro mobile plan) | Free forever web plan; basic photo-to-pixel-art conversions at standard resolutions with basic watermarking/ad support | Web and mobile AI pixel-art converter and portrait generator transforming photographs and illustrations into stylized, palette-quantized pixel art. |
+| **[Pyxel Edit](https://pyxeledit.com)** | Bootstrapped solo-developer project (<$100K estimated annual revenue) | $9.00 (one-time purchase beta license) | Free legacy version only (v0.2.x, unmaintained/severely feature-limited); no modern free trial for current versions | Specialized pixel-art and level-design editor built around linked tile instances, tileset auto-generation, and frame-by-frame sprite animation. |
+| **[Dottable](https://dottable.app)** (Yosuke Seki) | Bootstrapped solo-developer project (<$50K estimated annual revenue) | $2.99 (one-time in-app purchase to remove ads) | Free forever plan; full core sprite and GIF editing features, ad-supported with standard project slot caps | Mobile and tablet pixel-art creation studio focused on clean indexed palettes, symmetrical drawing tools, and quick sprite animation exports. |
+| **[Lospec](https://lospec.com)** | Community-funded open platform (~$6K–$12K/year via Patreon; ~$500/mo) | $1.00/mo (Patreon Supporter tier) | Free forever platform; unlimited access to browser pixel editor, tutorials, and color palette database without paywalls | Premier web hub for pixel artists offering a browser-based Lospec Pixel Editor, thousands of curated retro color palettes, and pixel-art tutorials. |
 
 
 
