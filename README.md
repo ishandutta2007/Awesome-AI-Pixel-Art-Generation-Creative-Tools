@@ -9,7 +9,7 @@
 <br/><br/>
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools?style=social" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools?style=social" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools?style=social" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-AI-Pixel-Art-Generation-Creative-Tools/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome" /></a>
@@ -86,7 +86,7 @@ Below is the comparative breakdown of commercial and hosted SaaS platforms, orde
 
 Below are the premier open-source repositories and creative libraries for pixel art generation, neural restoration, sprite editing, and game pipelines. 
 
-Repositories are **sorted strictly in descending order by GitHub Stars** and feature live social badges linking to their respective stargazers pages:
+Repositories are **sorted strictly in descending order by GitHub_Stars** and feature live social badges linking to their respective stargazers pages:
 
 1. **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** <a href="https://github.com/comfyanonymous/ComfyUI/stargazers"><img src="https://img.shields.io/github/stars/comfyanonymous/ComfyUI?style=social&color=white" alt="ComfyUI Stars" /></a>  
    *Most powerful modular node-based diffusion engine widely used with `FLUX` / `SDXL` pixel-art LoRAs, nearest-neighbor downscalers, and palette-clamping nodes.*
